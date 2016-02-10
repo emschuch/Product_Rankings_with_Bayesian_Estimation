@@ -1,0 +1,193 @@
+body #sephora {
+    margin: 0;
+}
+
+#sephora #sephora-container {
+    font-family: Roboto;
+    font-weight: 400;
+    letter-spacing: 1px;
+    margin: 0;
+    color: #333;
+    width: 100%;
+}
+#sephora #sephora-container,
+#sephora .chart-container {
+    display: inline-block;
+    margin: 0;
+    box-sizing: border-box;
+    float: left;
+}
+#sephora .chart-title {
+    fill: #333;
+    font-size: 20px;
+    font-weight: 300;
+}
+#sephora #chart-bar {
+    width: 60%;
+}
+#sephora #chart-dot {
+    width: 40%;
+}
+
+/* AXES */
+#sephora .axis path,
+#sephora .axis line {
+    fill: none;
+    stroke: #ccc;
+    shape-rendering: crispEdges;
+    stroke-width: 1px;
+}
+#sephora .x.axis text {
+    font-size: 14px;
+    fill: #999;
+    text-transform: uppercase;
+}
+#sephora .y.axis text {
+    font-size: 12px;
+    fill: #333;
+}
+#sephora .tick {
+    stroke-dasharray: 2px 3px;
+}
+#sephora .y.axis.stacked line {
+    stroke-width: 0;
+}
+
+/* CHART STYLES */
+#sephora .bar,
+#sephora .dot.bayes {
+    fill: rgba(245, 54, 108, 0.75);
+}
+#sephora .dot.rating {
+    fill: rgba(105, 105, 105, 0.75);
+}
+
+/* SORT BUTTONS */
+#sephora .sort-button-rect {
+    fill: #ddd;
+}
+#sephora .sort-button-text {
+    fill: #333;
+    font-size: 10px;
+    text-transform: uppercase;
+}
+#sephora .sort-buttons {
+    cursor: pointer;
+}
+#sephora .active-sort > .sort-button-rect {
+    fill: rgba(245, 54, 108, 0.75);
+}
+#sephora .active-sort > .sort-button-text {
+    fill: #fff;
+}
+#sephora .sort-by-text {
+    font-size: 14px;
+}
+
+/* LEGEND */
+#sephora .legend-text {
+    fill: #000;
+    font-size: 11px;
+    text-transform: uppercase;
+}
+
+/* ROW HIGHLIGHTING */
+#sephora .isolate-row,
+#sephora .highlight-row {
+    fill: none;
+    pointer-events: all;
+    cursor: pointer;
+}
+#sephora .dot.bayes.highlight-row {
+    stroke: #000;
+    stroke-width: 1px;
+}
+#sephora .dot.row-inactive,
+#sephora .dot.rating.highlight-row,
+#sephora .bar.row-inactive {
+    fill-opacity: 0.5;
+}
+#sephora .bar.highlight-row,
+#sephora .dot.bayes.highlight-row {
+    fill: rgba(245, 54, 108, 1);
+}
+#sephora .highlight-text {
+    font-size: 14px;
+    fill: #000;
+}
+
+/* TABLE STYLE */
+#sephora table {
+    font-family: Roboto;
+    letter-spacing: 1px;
+    margin: 0;
+    color: #333;
+    width: 80%;
+    text-align: right;
+    border-collapse: collapse;
+    line-height: 1.2;
+    margin: 0 auto;
+}
+#sephora .header-cells {
+    font-weight: 300;
+    font-size: 14px;
+    border-bottom: 1px solid #000;
+    color: #333;
+    text-transform: uppercase;
+    vertical-align: bottom;
+    padding: 4px 6px;
+}
+#sephora .product-cell {
+    text-align: left;
+}
+#sephora .table-cells {
+    font-size: 13px;
+    padding: 4px 6px;
+}
+
+@media (max-width: 900px) {
+    #sephora #sephora-container,
+    #sephora .chart-container {
+        display: block;
+        float: left;
+    }
+    #sephora #chart-bar {
+        width: 100%;
+    }
+    #sephora #chart-dot {
+        width: 100%;
+    }
+}
+
+@media (max-width: 400px) {
+    #sephora .chart-title {
+        font-size: 20px
+    }
+    #sephora .x.axis text {
+        font-size: 9px;
+    }
+    #sephora .y.axis text {
+        font-size: 9px;
+    }
+    #sephora .sort-button-rect {
+        width: 120px;
+        height: 18px;
+    }
+    #sephora .sort-button-text {
+        font-size: 9px;
+    }
+    #sephora .sort-by-text {
+        font-size: 14px;
+    }
+    #sephora table {
+        width: 100%;
+    }
+    #sephora .header-cells {
+        font-size: 11px;
+        padding: 2px 3px;
+    }
+    #sephora .table-cells {
+        font-size: 10px;
+        padding: 2px 3px;
+    }
+}

@@ -1,1 +1,1 @@
-# Product_Rankings_with_Bayesian_Estimation
+# Product Rankings with Bayesian Estimation
